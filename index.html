@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Template</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <form id="searchForm">
+        <input type="text" id="search" class="search-input" placeholder="Search"/>
+      </form>
+    </header>
+
+    <main id="main" class="movie-list">
+      
+    </main>
+
+    <template id="movieTemplate">
+      <section class="movie">
+        <img class="movie-img" src="{{imageSrc}}" alt=""/>
+        
+        <header class="movie-info">
+          <h3 class="movie-info--title">{{title}}</h3>
+          <span class="movie-info--raiting movie-info--raiting--top">{{vote_average}}</span>
+        </header>
+
+        <div class="movie-description">
+          <p>{{overview}}</p>
+        </div>
+      
+      </section>
+    </template>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
